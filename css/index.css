@@ -1,0 +1,156 @@
+#logo {
+    height: 100px;
+}
+#background {
+    background-color: #FBE7FB;
+}
+/* jumbotron bg image */
+#backgrounds {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(60%);
+}
+/* breaks */
+.stripe {
+    width: 100%;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      #ffffff ,
+      #0002ec ,
+      #ea00eb ,
+      #e70000 ,
+      #ed8605 ,
+      #ffffff 
+    )
+}
+.stripe-1 {
+    width: 100%;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      #ffffff ,
+      #221e1f ,
+      #b9b353 ,
+      #853082 ,
+      #b25186 ,
+      #ffffff 
+    )
+}
+
+.stripe-2 {
+    width: 100%;
+    color: transparent;
+    background:  linear-gradient(
+        to right,
+        #ffffff ,
+        #F26B83 ,
+        #F25E95 ,
+        #0A6AA6 ,
+        #F2A950 ,
+        #F2AA80 ,
+        #ffffff
+        
+
+    )
+}
+.stripe-3 {
+    width: 100%;
+    color: transparent;
+    background:  linear-gradient(
+        to right,
+        #ffffff ,
+        #f75118 ,
+        #f7a472 ,
+        #ffffff
+        
+
+    )
+}
+/* fonts */
+#blonde {
+    font-family: 'Blonde';
+    color: black;
+}
+
+/* hover effects */
+/*  1 */
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 55%;
+  }
+  
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+  }
+  
+  .hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  
+  .hover-content {
+    position: relative;
+    z-index: 99;
+  }
+.hover-1 img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transition: all 0.3s;
+  }
+  
+  .hover-1-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.4s;
+  }
+  
+  .hover-1 .hover-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hover-1-description {
+    transform: translateY(0.5rem);
+    transition: all 0.4s;
+    opacity: 0;
+  }
+  
+  .hover-1:hover .hover-1-content {
+    bottom: 2rem;
+  }
+  
+  .hover-1:hover .hover-1-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-1:hover img {
+    left: 0;
+  }
+  
+  .hover-1:hover .hover-overlay {
+    opacity: 0;
+  }
+  
+  /* album images */
+  .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
