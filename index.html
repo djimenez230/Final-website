@@ -15,14 +15,14 @@
   <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="hello">
   <!-- navbar -->
-  <nav class="navbar fixed-top navbar-dark bg-black">
+  <nav class="navbar fixed-top navbar-dark bg-black bg-opacity-75">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://djimenez230.github.io/Finalprojectbeginners/index.html">
         <img id="logo" src="img/milk.png" alt=""> </a>
-      <button class="navbar-toggler me-5 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-dark me-5 p-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"> </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,31 +31,27 @@
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#News">Second</a>
+            <a class="nav-link" href="#News">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Editor Picks">Third</a>
+            <a class="nav-link" href="#Digs">Digs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Fourth</a>
+            <a class="nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   </div>
-  <!-- break using stripe -->
-  <div class="container-fluid">
-    <section class="stripe m-4 p-2">d </section>
-  </div>
-  </div>
+
 
   <!-- Jumbotron -->
   <div id="home"></div>
-  <div id="backgrounds" class=" mt-5">
+  <div id="backgrounds" class="container-fluid w-100 help">
     <div class=" mt-5 pt-5 text-center bg-image d-flex justify-content-center" style=" 
 background-image: url('img/albums.png'); 
-">">
+">
       <div class="bg-black text-white mb-3">
         <h1 class="mt-5">Milk Crate Music</h1>
         <h7>A open letter</h7>
@@ -71,6 +67,7 @@ background-image: url('img/albums.png');
     <section class="stripe">d </section>
   </div>
   <!-- news -->
+  <div id="News"></div>
   <h1 class="text-center p-5" id="blonde">Hot <br> News</h1>
   <!-- practices with d flex 1 image two side -->
   <!--1st item-->
@@ -138,18 +135,13 @@ background-image: url('img/albums.png');
   </div>
 
   <!-- Editor Picks -->
+  <div id="Digs"></div>
   <h1 id="blonde" class="text-center p-2"> Diego's <br> <br> Digs </h1>
   <!-- cards -->
-  <div class="row row-cols-xl-4 row-cols-md-2 row-cols-sm-1 g-4 mt-5">
+  <div class="row row-cols-xl-4 row-cols-md-2 row-cols-sm-1 g-4 m-2 ">
     <div class="col">
       <div class="card h-100">
-        <img
-          src="img/idk.png"
-          class="card-img-top span"
-          alt="Hollywood Sign on The Hill"
-          span
-
-        /> 
+        <img src="img/idk.png" class="card-img-top span" alt="Hollywood Sign on The Hill" span />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">
@@ -161,11 +153,7 @@ background-image: url('img/albums.png');
     </div>
     <div class="col">
       <div class="card">
-        <img
-          src="img/donda.jpg"
-          class="card-img-top"
-          alt="Palm Springs Road"
-        />
+        <img src="img/donda.jpg" class="card-img-top" alt="Palm Springs Road" />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">
@@ -177,11 +165,7 @@ background-image: url('img/albums.png');
     </div>
     <div class="col">
       <div class="card h-100">
-        <img
-          src="img/babykeem.jpeg"
-          class="card-img-top"
-          alt="babykeem"
-        />
+        <img src="img/babykeem.jpeg" class="card-img-top" alt="babykeem" />
         <div class="card-body">
           <h5 class="card-title">Baby Keem- The Melodic blue</h5>
           <p class="card-text">
@@ -193,13 +177,9 @@ background-image: url('img/albums.png');
     </div>
     <div class="col">
       <div class="card">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.jpg"
-          class="card-img-top"
-          alt="Skyscrapers"
-        />
+        <img src="img/saba.jpg" class="card-img-top" alt="Skyscrapers" />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Saba- Care For Me</h5>
           <p class="card-text">
             This is a longer card with supporting text below as a natural lead-in to
             additional content. This content is a little bit longer.
@@ -214,6 +194,8 @@ background-image: url('img/albums.png');
   <div class="container-fluid mt-5">
     <section class="stripe-1 w-100">d </section>
   </div>
+  <!-- Contact -->
+  <div id="Contact"></div>
   <!-- Forms-->
   <h1 class="text-center">Let Me What Artist to listen to next</h1>
 
@@ -227,6 +209,11 @@ background-image: url('img/albums.png');
       <div class="mb-3">
         <label class="form-label" for="name">Artists Name</label>
         <input class="form-control" id="name" type="text" placeholder="ex. Frank Ocean" />
+      </div>
+      <!-- album input -->
+      <div class="mb-3">
+        <label class="form-label" for="album">What album Shoud I Start With?</label>
+        <input class="form-control" id="album" type="text" placeholder="ex. Blonde" />
       </div>
 
       <!-- Email address input -->
@@ -242,25 +229,25 @@ background-image: url('img/albums.png');
       </div>
 
       <!-- Form submit button -->
-      <div class="d-grid">
+      <div class="d-grid justify-content-center">
         <button class="btn btn-primary btn-lg" type="submit">Submit</button>
       </div>
 
     </form>
 
   </div>
-    <!-- break using stripe -->
-    <div class="container-fluid mt-5">
-      <section class="stripe-3 w-100">d </section>
-    </div>
+  <!-- break using stripe -->
+  <div class="container-fluid mt-5">
+    <section class="stripe-3 w-100">d </section>
+  </div>
   <!-- footer -->
   <footer>
     <div class="text-center">
-    <h1>Social Media</h1>
+      <h1>Social Media</h1>
       <i class="fa fa-facebook-square fa-10x"></i>
       <i class="fab fa-twitter-square fa-10x"></i>
       <i class="fab fa-instagram-square fa-10x"></i>
-  </div>
+    </div>
 
 
 

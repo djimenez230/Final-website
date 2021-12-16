@@ -1,8 +1,8 @@
 #logo {
     height: 100px;
 }
-#background {
-    background-color: #FBE7FB;
+.hello {
+    background-color: rgba(245, 245, 245, 0.637);
 }
 /* jumbotron bg image */
 #backgrounds {
@@ -11,6 +11,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     filter:brightness(60%);
+}
+/* jumbotron margin issues */
+.help {
+    margin-top: 129px;
 }
 /* breaks */
 .stripe {
@@ -81,6 +85,7 @@
     overflow: hidden;
     position: relative;
     padding-bottom: 55%;
+
   }
   
   .hover-overlay {
@@ -122,7 +127,7 @@
   }
   
   .hover-1 .hover-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(36, 35, 35, 0.5);
   }
   
   .hover-1-description {
@@ -154,3 +159,4 @@
     height: 40vh;
     object-fit: cover;
 }
+
