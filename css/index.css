@@ -4,6 +4,8 @@
 .hello {
     background-color: rgba(245, 245, 245, 0.637);
 }
+/* navbar */
+
 /* jumbotron bg image */
 #backgrounds {
     background-attachment: fixed;
@@ -77,6 +79,17 @@
 #blonde {
     font-family: 'Blonde';
     color: black;
+}
+.card-text {
+  font-size: 1.5rem;
+  font-family: 'Inter';
+  padding: 60px;
+}
+.card-title {
+  font-size: 1.9rem;
+  font-family: 'Inter';
+  font-weight: 800;
+  
 }
 
 /* hover effects */

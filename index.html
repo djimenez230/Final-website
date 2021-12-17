@@ -8,6 +8,10 @@
   <!-- css -->
   <link rel="stylesheet" href="css/index.css">
 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,33 +21,31 @@
 
 <body class="hello">
   <!-- navbar -->
-  <nav class="navbar fixed-top navbar-dark bg-black bg-opacity-75">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://djimenez230.github.io/Finalprojectbeginners/index.html">
         <img id="logo" src="img/milk.png" alt=""> </a>
-      <button class="navbar-toggler bg-dark me-5 p-3" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"> </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-end">
+      <div class="collapse navbar-collapse d-flex justify-content-end me-5" id="navbarNav">
+        <ul class="navbar-nav ">
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#home" style="font-size: 1.5rem;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#News">News</a>
+            <a class="nav-link" href="#News" style="font-size: 1.5rem;">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Digs">Digs</a>
+            <a class="nav-link" href="#Digs" style="font-size: 1.5rem;">Digs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="#Contact" style="font-size: 1.5rem;"> Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  </div>
 
 
   <!-- Jumbotron -->
@@ -52,222 +54,324 @@
     <div class=" mt-5 pt-5 text-center bg-image d-flex justify-content-center" style=" 
 background-image: url('img/albums.png'); 
 ">
-      <div class="bg-black text-white mb-3">
+      <div class="bg-black bg-opacity-75 text-white fw-bold mb-3">
         <h1 class="mt-5">Milk Crate Music</h1>
         <h7>A open letter</h7>
         <p class=" p-5 m-5">This will be you're one stop to explore the interest of the editor Diego Jimenez (me).<br> I
-          hope you enjoy some of the things im going to present to you. <br> Have music you want to share. Contact me
+          hope you enjoy some of the things I'm going to present to you. <br> Have music you want to share. Contact me
           using the button below. <br> Thank you so much for your time and I do hope you enjoy. </p>
-        <a class="btn btn-outline-light btn-lg mb-5 " href="#!" role="button">LEARN MORE</a>
+        <a class="btn btn-outline-light btn-lg mb-5 " href="#Contact" role="button">Contact</a>
       </div>
     </div>
   </div>
   <!-- break using stripe -->
-  <div class="container-fluid">
+  <div class="container-fluid m-5">
     <section class="stripe">d </section>
   </div>
   <!-- news -->
   <div id="News"></div>
-  <h1 class="text-center p-5" id="blonde">Hot <br> News</h1>
+  <h1 class="text-center pb-5" id="blonde">Hot <br> News</h1>
   <!-- practices with d flex 1 image two side -->
   <!--1st item-->
   <div class="container-fluid d-flex bg-light row justify-content-around ">
-    <div class="col-xl-4 col-md-7 pb-5">
+    <div class="col-xl-6 col-md-7 pb-5">
       <div class="hover hover-1 text-white rounded mb-3">
         <img src="img/Kanye-drake.jpg" alt="">
         <div class="hover-overlay"></div>
         <div class="hover-1-content px-5 py-4">
           <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light"></span>Kanye
             West x Drake Concert</h3>
-          <p class="hover-1-description font-weight-dark mb-0">Ye and Drake performed at </p>
-          <a class="btn btn-outline-light btn-sm " href="#!" role="button">WATCH NOW</a>
+          <p class="hover-1-description font-weight-dark mb-0">Watch Kanye, as he headlines his first show in five
+            years, with special guest Drake. Live from the Los Angeles Memorial Coliseum, this livestream is in support
+            of raising awareness of the need for prison and sentencing reform. </p>
+          <a class="btn btn-outline-light btn-sm "
+            href="https://www.amazon.com/Kanye-Special-Hoover-Benefit-Concert/dp/B09NH7D6P7/ref=sr_1_2?crid=3D3XR7Y9BCEDH&keywords=kanye+prime+video&qid=1639692850&sprefix=kanye+prime+v%2Caps%2C225&sr=8-2"
+            role="button">WATCH NOW</a>
         </div>
       </div>
     </div>
-    <!--2nd Item-->
-    <div class="col-xl-4 col-md-7 pb-5">
-      <div class="hover hover-1 text-white rounded">
-        <img src="img/where.png" alt="">
-        <div class="hover-overlay"></div>
-        <div class="hover-1-content px-5 py-4">
-          <h3 class="hover-1-title text-black font-weight-bold mb-0"> Wheres Frank </h3>
-          <p class="hover-1-description font-weight-light text-black mb-0">Lorem ipsum dolor sit amet, consectetur
-            adipisicing
-            elit.</p>
+    <!-- Cards wit side image and text 1 -->
+    <div class="container-fluid col-12 text-center">
+      <div class="card mb-3" style="max-width: 2000px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/where.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Where's Frank</h5>
+              <p class="card-text">Since his last Album in 2018, fans have been waiting for his
+                new album to release. Fans were anticipiting a release in 2020 when Ocean realesed a series of singles
+                to his fans. Some speculate whith the death of his younger brother mid last year may has stopped the
+                rollout of his new album <a class=" text-decoration-underline text-primary"
+                  href="https://people.com/music/frank-ocean-brother-ryan-breaux-killed-car-accident/">Source.</a> Since
+                then Ocean has released a luxury jewelery brand by the name of Homer... </p>
+              <a class="btn btn-outline-primary btn-sm text-center " href="#!" role="button">Read More </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- second attempt for a grid -->
-  <!--1st item-->
-  <div class="container-fluid d-flex bg-light row flex-row justify-content-around">
-    <div class="col-xl-4 col-md-7 pb-5">
-      <div class="hover hover-1 text-white rounded mb-3">
-        <img src="img/fragrance.jpg" alt="">
-        <div class="hover-overlay"></div>
-        <div class="hover-1-content px-5 py-4">
-          <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light"></span>Kanye
-            West x Drake Concert</h3>
-          <p class="hover-1-description font-weight-dark mb-0">Ye and Drake performed at </p>
-          <a class="btn btn-outline-light btn-sm " href="#!" role="button">WATCH NOW</a>
+    <!-- Cards wit side image and text Rolling Loud -->
+    <div class="container-fluid col-12 text-center">
+      <div class="card mb-3" style="max-width: 2000px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/rolling.jpg" class="img-fluid rounded-start m-3 mx-5" alt="...">
+          </div>
+          <div class="col-md-8 ">
+            <div class="card-body">
+              <h5 class="card-title">Rolling Loud 2021</h5>
+              <p class="card-text h-50">Nothing really news worthy here other than Kanye being brought on Future's set.
+                Which is cool. <br> I just a funny story regarding this event. I planned to go to this event with a
+                couple of friends. We planned everything out expect one thing the hotel we were going to stay at. The
+                funny thing is my friend took responsibility on finding a hotel. 2 weeks before the even we get a text
+                from my friend saying "hey man I completely forgot to book a hotel." I immediatly started looking for a
+                hotel and the nearest one was sketchy hotel 30 minutes away for $1000 ...</p>
+              <a class="btn btn-outline-primary btn-sm " href="#!" role="button">Read More</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!--2nd Item-->
-    <div class="col-xl-4 col-md-7 pb-5">
-      <div class="hover hover-1 text-white rounded">
-        <img src="img/where.png" alt="">
-        <div class="hover-overlay"></div>
-        <div class="hover-1-content px-5 py-4">
-          <h3 class="hover-1-title text-black font-weight-bold mb-0"> Wheres Frank </h3>
-          <p class="hover-1-description font-weight-light text-black mb-0">Lorem ipsum dolor sit amet, consectetur
-            adipisicing
-            elit.</p>
+    <!-- Cards wit side image and text Tyler Frangrance -->
+    <div class="container-fluid col-12 text-center">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="img/fragrance.jpg" class="img-fluid rounded-start h-75 ml-5" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Tyler The Creator Realases Nail-polish and Frangance Line</h5>
+              <p class="card-text">Tyler realeased a line by the name of le FLEUR. This line consist of a variety of
+                items from clothing accessories to Notebook. Something that caught my attention was his fragrance and
+                nail polish line. The nail polish color scream summer and its soothing colors are easy to look at .
+                Along with that he release a 100ml fragrance with a hefty price tag of $200 but if you dont want to spen
+                the money not knowing the scent he has a smaller sample fragrance for $40 ... </p>
+              <a class="btn btn-outline-primary btn-sm " href="https://golflefleur.com/products/french-waltz-10ml"
+                role="button">Read More</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-  <!-- break using stripe -->
-  <div class="container-fluid">
-    <section class="stripe-2 w-100">d </section>
-  </div>
 
-  <!-- Editor Picks -->
-  <div id="Digs"></div>
-  <h1 id="blonde" class="text-center p-2"> Diego's <br> <br> Digs </h1>
-  <!-- cards -->
-  <div class="row row-cols-xl-4 row-cols-md-2 row-cols-sm-1 g-4 m-2 ">
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/idk.png" class="card-img-top span" alt="Hollywood Sign on The Hill" span />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a longer card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
-          </p>
+
+
+    <!-- break using stripe -->
+    <div class="container-fluid">
+      <section class="stripe-2 w-100">d </section>
+    </div>
+
+    <!-- Editor Picks -->
+    <div id="Digs"></div>
+    <h1 id="blonde" class="text-center p-5"> Diego's <br> <br> Digs </h1>
+    <!-- cards -->
+    <!-- idk card -->
+    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-sm-1 text-center h-100">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/idk.png" class="card-img-top span" alt="Hollywood Sign on The Hill" span />
+          <div class="card-body">
+            <h5 class="card-title">IDK <br> <span class="text-secondary">USEE4YOURSELF</span> </h5>
+            <p class="card-sm-text">
+              This project follows Jay (IDK) and his relationship with his family, lovers, and religion and how all
+              those things affected his perspective of life. This will all tie back to a common theme of "is he real".
+              This album and the stories he shares paired with a high production value really tie this project together.
+            </p>
+          </div>
+          <!-- Music links IDK -->
+          <div class="card-footer text-muted d-flex justify-content-evenly">
+            <a class=" btn-outline-danger"
+              href="https://music.youtube.com/playlist?list=OLAK5uy_kgZieejNWMK4FpfpFXJbEGCsWMSuoJDPU">
+              <i class="fab fa-youtube fa-4x"></i>
+            </a>
+            <a class=" btn-outline-success" href="https://open.spotify.com/album/1aOVW07qHIiMe3f3HKXo8r?autoplay=true">
+              <i class="fab fa-spotify fa-4x"></i>
+            </a>
+            <a class=" btn-outline-danger opacity-75" href="https://music.apple.com/us/album/usee4yourself/1570546915">
+              <i class="fab fa-itunes fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/donda.jpg" class="card-img-top" alt="Palm Springs Road" />
+          <div class="card-body">
+            <h5 class="card-title">Kanye West <br> <span class="text-secondary">Donda</span></h5>
+            <p class="card-sm-text">
+              An Ode to his Mother this Album with a runtime of 1 hour of 49 minutes has many highlights but at moment's
+              you can feel bog down by the density of the tracklist. Some of my biggest take aways are songs that sound
+              great have another level of artisty when performed live. An example is the track Come to Life this song
+              live ascends with the live instruments and the pasion of Ye's voice.
+            </p>
+          </div>
+          <!-- Music links  kanye -->
+          <div class="card-footer text-muted d-flex justify-content-evenly">
+            <a class=" btn-outline-danger"
+              href="https://music.youtube.com/playlist?list=OLAK5uy_mt1CozrMsSYFHXkkpeHkmk5hmxdsXRTnw">
+              <i class="fab fa-youtube fa-4x"></i>
+            </a>
+            <a class=" btn-outline-success" href="https://open.spotify.com/album/5CnpZV3q5BcESefcB3WJmz?autoplay=true">
+              <i class="fab fa-spotify fa-4x"></i>
+            </a>
+            <a class=" btn-outline-danger opacity-75" href="https://music.apple.com/us/album/donda/1587795158">
+              <i class="fab fa-itunes fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/babykeem.jpeg" class="card-img-top" alt="babykeem" />
+          <div class="card-body">
+            <h5 class="card-title">Baby Keem <br><span class="text-secondary"> The Melodic Blues </span></h5>
+            <p class="card-sm-text">
+              Baby Keem debut album is a joy to listen to. Kendrick Lammar Cousin come's out strong. This album shows
+              the versatility of his voice along and type of music he can create shows he can make something grand in
+              the future. This album is a little rough around the edges but I see potential for an amazing album out of
+              Baby Keem.
+            </p>
+          </div>
+          <!-- Music links baby keem -->
+          <div class="card-footer text-muted d-flex justify-content-evenly">
+            <a class=" btn-outline-danger"
+              href="https://music.youtube.com/playlist?list=OLAK5uy_l2060miYQOqsjyzcluaAQwxdSYVQ4arpU">
+              <i class="fab fa-youtube fa-4x"></i>
+            </a>
+            <a class=" btn-outline-success" href="https://open.spotify.com/album/3r46DPIQeBQbjvjjV5mXGg?autoplay=true">
+              <i class="fab fa-spotify fa-4x"></i>
+            </a>
+            <a class=" btn-outline-danger opacity-75"
+              href="https://music.apple.com/us/album/the-melodic-blue/1584419112">
+              <i class="fab fa-itunes fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/saba.jpg" class="card-img-top" alt="Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">Saba <br> <span class=" text-secondary"> Care For Me </span></h5>
+            <p class="card-sm-text">
+              This Album was realeased in 2018 but still to this day holds a special place in my heart. This album was
+              realease after the death of Walter, Tahj (Saba) cousin, this album center's around his upbringing and his
+              relationship with his cousin Walter. Prom/King is a emotion pack storytelling with an ending that gives me
+              chill knowing what happens to Walter.
+            </p>
+          </div>
+          <!-- Music Links Saba -->
+          <div class="card-footer text-muted d-flex justify-content-evenly">
+            <a class=" btn-outline-danger"
+              href="https://music.youtube.com/playlist?list=OLAK5uy_nLSaQxzt9yydCSvo2Bfc7C8nHEbo4f_-4">
+              <i class="fab fa-youtube fa-4x"></i>
+            </a>
+            <a class=" btn-outline-success" href="https://open.spotify.com/album/6Te111t5gDZ7W94myHRqUt?autoplay=true">
+              <i class="fab fa-spotify fa-4x"></i>
+            </a>
+            <a class=" btn-outline-danger opacity-75" href="https://music.apple.com/us/album/care-for-me/1365784239">
+              <i class="fab fa-itunes fa-4x"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/donda.jpg" class="card-img-top" alt="Palm Springs Road" />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a longer card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
-          </p>
+
+
+    <!-- break using stripe -->
+    <div class="container-fluid mt-5">
+      <section class="stripe-1 w-100">d </section>
+    </div>
+    <!-- Contact -->
+    <div id="Contact"></div>
+    <!-- Forms-->
+    <h1 class="text-center m-5 ">Let Me Know What Artist To Listen To Next!</h1>
+
+    <!-- Wrapper container -->
+    <div class="container w-50">
+
+      <!-- Bootstrap 5 starter form -->
+      <form id="contactForm">
+
+        <!-- Name input -->
+        <div class="mb-3">
+          <label class="form-label" for="name">Artists Name</label>
+          <input class="form-control" id="name" type="text" placeholder="ex. Frank Ocean" />
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/babykeem.jpeg" class="card-img-top" alt="babykeem" />
-        <div class="card-body">
-          <h5 class="card-title">Baby Keem- The Melodic blue</h5>
-          <p class="card-text">
-            This is a longer card with supporting text below as a natural lead-in to
-            additional content.
-          </p>
+        <!-- album input -->
+        <div class="mb-3">
+          <label class="form-label" for="album">What album Shoud I Start With?</label>
+          <input class="form-control" id="album" type="text" placeholder="ex. Blonde" />
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/saba.jpg" class="card-img-top" alt="Skyscrapers" />
-        <div class="card-body">
-          <h5 class="card-title">Saba- Care For Me</h5>
-          <p class="card-text">
-            This is a longer card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
-          </p>
+
+        <!-- Email address input -->
+        <div class="mb-3">
+          <label class="form-label" for="emailAddress">Email Address</label>
+          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
         </div>
-      </div>
+
+        <!-- Message input -->
+        <div class="mb-3">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-control" id="message" type="text" placeholder="Message"
+            style="height: 10rem;"></textarea>
+        </div>
+
+        <!-- Form submit button -->
+        <div class="d-grid justify-content-center">
+          <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+        </div>
+
+      </form>
+
     </div>
-  </div>
-
-
-  <!-- break using stripe -->
-  <div class="container-fluid mt-5">
-    <section class="stripe-1 w-100">d </section>
-  </div>
-  <!-- Contact -->
-  <div id="Contact"></div>
-  <!-- Forms-->
-  <h1 class="text-center">Let Me What Artist to listen to next</h1>
-
-  <!-- Wrapper container -->
-  <div class="container">
-
-    <!-- Bootstrap 5 starter form -->
-    <form id="contactForm">
-
-      <!-- Name input -->
-      <div class="mb-3">
-        <label class="form-label" for="name">Artists Name</label>
-        <input class="form-control" id="name" type="text" placeholder="ex. Frank Ocean" />
-      </div>
-      <!-- album input -->
-      <div class="mb-3">
-        <label class="form-label" for="album">What album Shoud I Start With?</label>
-        <input class="form-control" id="album" type="text" placeholder="ex. Blonde" />
-      </div>
-
-      <!-- Email address input -->
-      <div class="mb-3">
-        <label class="form-label" for="emailAddress">Email Address</label>
-        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-      </div>
-
-      <!-- Message input -->
-      <div class="mb-3">
-        <label class="form-label" for="message">Message</label>
-        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-      </div>
-
-      <!-- Form submit button -->
-      <div class="d-grid justify-content-center">
-        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-      </div>
-
-    </form>
-
-  </div>
-  <!-- break using stripe -->
-  <div class="container-fluid mt-5">
-    <section class="stripe-3 w-100">d </section>
-  </div>
-  <!-- footer -->
-  <footer>
-    <div class="text-center">
-      <h1>Social Media</h1>
-      <i class="fa fa-facebook-square fa-10x"></i>
-      <i class="fab fa-twitter-square fa-10x"></i>
-      <i class="fab fa-instagram-square fa-10x"></i>
+    <!-- break using stripe -->
+    <div class="container-fluid mt-5">
+      <section class="stripe-3 w-100">d </section>
     </div>
+    <!-- footer -->
+    <footer>
+      <div class="text-center">
+        <h1>Social Media</h1>
+        <!-- Social Media Link -->
+        <div class=" container-fluid d-flex justify-content-evenly w-75 ">
+          <a href="">
+            <i class="fa fa-facebook-square fa-5x btn-outline-dark"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter-square fa-5x btn-outline-dark "></i>
+          </a>
+          <a href="https://www.instagram.com/djimenez230/">
+            <i class="fab fa-instagram-square fa-5x btn-outline-dark"></i>
+          </a>
+        </div>
+
+      </div>
 
 
 
 
 
 
-  </footer>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/1afb45b4ca.js" crossorigin="anonymous"></script>
+    </footer>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1afb45b4ca.js" crossorigin="anonymous"></script>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
